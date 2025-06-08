@@ -2,7 +2,7 @@
   "name": "eurospicelite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akash-005-fs.github.io/europicedemo",
+  "homepage": "https://akash-005-fs.github.io/eurospicelitedemo",
   "dependencies": {
     "aos": "^2.3.4",
     "framer-motion": "^12.16.0",
