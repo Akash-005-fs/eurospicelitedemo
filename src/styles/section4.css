@@ -1,0 +1,140 @@
+.section4main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+background-color: rgb(255, 255, 255);
+  border-top: 1px solid #c4c1c1;
+}
+
+
+.productwrapper4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0);
+    position: relative;
+}
+
+
+.image4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  background-color: #ffffff00;
+    z-index: 0;
+    display: flex;
+}
+
+
+.image14{
+    height: 300px;
+    width: 450px;
+    background-color: #2a249300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+   
+}
+
+.image1in4{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/brahminspic.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.text4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ff450200;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.text4 h1{
+    margin-top: 30%;
+    color: #ffffff;
+}
+
+.frontal4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/grand\ foods.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    display: flex;
+    background-repeat: no-repeat;
+
+     background-repeat: no-repeat;
+
+}
+
+
+
+
+.brand4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ffaf0200;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand14{
+    height: 85px;
+    width: 240px;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+
+.brand1in4{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+ background-image: url(../assets/grandfooddslogo.png);
+ 
+}
+
+
+
+
+
+@media only screen and (min-width:700px) {
+    
+.frontal4{
+    background-color: #e6ff0200;
+    background-image: none;
+}
+
+.image14{
+    margin-top: 5%;
+}
+
+.image14{
+    height: 400px;
+    width: 650px;
+
+}
+
+.text4 h1{
+margin-top: 5%;
+} 
+
+}

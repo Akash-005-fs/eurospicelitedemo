@@ -1,0 +1,421 @@
+/* GLOBAL STYLES */
+/* BASE RESET */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  transition: overflow 0.3s ease;
+  font-family: sans-serif;
+}
+
+/* MAIN WRAPPER */
+.landmain {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* TOP SECTION */
+.ltop {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  border-bottom-left-radius: 100% 20%;
+  border-bottom-right-radius: 100% 20%;
+  overflow: hidden;
+}
+
+/* VIDEO BACKGROUND */
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* DARK SEMI-TRANSPARENT OVERLAY */
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* NAVIGATION WRAPPER ABOVE OVERLAY */
+.nav-wrapper {
+  position: relative;
+  z-index: 3;
+  padding: 0.75rem 2rem 1rem; /* Adjusted top padding */
+  height: 100%;
+  display: flex;
+  align-items: flex-start; /* Push nav up */
+}
+
+
+/* NAVIGATION BAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  padding: 4px;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: Italic ;
+  font-size: larger;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #5271ff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.rotate1 {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.rotate2 {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    flex-direction: column;
+    background-color: #5271ff;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    z-index: 3;
+    font-size: 1.5rem;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    transition: transform 0.4s ease;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* BACKDROP */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* CIRCLE ANIMATION */
+.circle-wrapper {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin-top: -80px;
+  pointer-events: none;
+  z-index: 1;
+  transition: 0.8s;
+}
+
+.circle-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-image {
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.circle-text {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateText 12s linear infinite;
+}
+
+.circle-text text {
+  font-size: 14px;
+  fill: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* BOTTOM SECTION */
+.lbottom {
+  height: 50vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 0 2%; */
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+
+
+
+
+.lbleft{
+height: 80%;
+width: 100%;
+background-color: rgba(64, 191, 191, 0);
+display: flex;
+align-items: center;
+justify-content: flex-start;
+
+position: absolute;
+z-index: 0;
+
+}
+
+.intro-text {
+  max-width: 100%;
+  padding: 1rem;
+  color: #000;
+  text-align: left;
+  
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #d35400; /* optional spice color */
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 0%;
+}
+
+.intro-text p {
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: Italic ;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: .5rem; /* optional spacing between lines */
+}
+
+
+
+
+
+
+.lbright{
+height: 100%;
+width: 300px;
+background-color: rgba(0, 255, 255, 0);
+position: absolute;
+z-index: 1;
+}
+
+
+
+.lbrightin{
+height: 100%;
+width: 100%;
+background-image: url(../assets//2.png);
+background-position: center;
+background-size: cover;
+}
+
+.lmain {
+  height: 100%;
+  width: 100%;
+  display: none; /* Hide by default */
+  flex-direction: column;
+  position: absolute;
+  z-index: 11;
+ margin-left: 0%;
+}
+
+.lmain h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-top: 20%;
+  margin-left: 5%;
+  margin-bottom: 0.5rem;
+  color: #d35400;
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-style: normal;
+  position: absolute;
+}
+
+.limg {
+  width: 340px;
+  height: 300px;
+  background-color: rgba(255, 0, 0, 0); /* ← Just a test background */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 25%;
+}
+
+.limgin{
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/lmain2.png );
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+
+
+/* Show only on small screens */
+@media (max-width: 900px) {
+  .lmain {
+    display: flex;
+  }
+
+  .lbleft,
+  .lbright {
+    display: none;
+  }
+
+  .lbottom {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    gap: 1.5rem;
+  }
+}
+
+
+
+/* Fade-in Keyframe */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to .lbottom */
+.lbottom {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0; /* ensure initial state */
+}
+

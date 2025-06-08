@@ -1,0 +1,134 @@
+.showallmain { 
+    width: 100%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.productsin,
+.brandsin {
+    flex: 1;
+    min-height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+   
+}
+.products,
+.brands {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #c4c1c1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.text-area {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #333;
+    margin-left: 5%;
+}
+
+.text-area h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.discover-btn {
+    background-color: #333;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: fit-content;
+}
+
+.discover-btn:hover {
+    background-color: #555;
+}
+
+.productsin,
+.brandsin {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.productsin {
+    background-image: url(../assets/25.png);
+}
+
+.brandsin {
+    background-image: url(../assets/55.png);
+}
+
+/* Hover Zoom */
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .products,
+    .brands {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-area {
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .productsin,
+    .brandsin {
+        width: 100%;
+        min-height: 250px; /* Updated for better visibility */
+    }
+
+    .text-area h2 {
+        font-size: 1.5rem;
+    }
+
+    .discover-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpFade 1s ease forwards;
+}

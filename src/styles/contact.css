@@ -1,0 +1,91 @@
+.contactmain {
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  margin-top: 5%;
+  width: 90%;
+  border-radius: 50px;
+}
+
+.contact-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact-content {
+  padding: 2rem;
+  background-color: #fdf6e400; /* Soft yellow like in the image */
+}
+
+.contact-info-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+ 
+  text-align: left;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.contact-info-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.contact-info-box p {
+  margin: 0.6rem 0;
+  line-height: 1.6;
+}
+
+.map-container {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contactmain {
+  animation: fadeInUp 0.8s ease-out;
+}

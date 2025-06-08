@@ -1,0 +1,140 @@
+.section5main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+background-color: rgb(255, 255, 255);
+  border-top: 1px solid #c4c1c1;/* minimal light gray top border */
+}
+
+
+.productwrapper5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(240, 248, 255, 0);
+    position: relative;
+}
+
+
+.image5{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+   background-color: rgba(240, 248, 255, 0);
+    z-index: 0;
+    display: flex;
+}
+
+
+.image15{
+    height: 300px;
+    width: 450px;
+    background-color: #2a249300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+   
+}
+
+.image1in5{
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/brahminspic.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.text5{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ff450200;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.text5 h1{
+    margin-top: 30%;
+    color: #ffffff;
+}
+
+.frontal5{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../assets/ogbrahmins.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    display: flex;
+    background-repeat: no-repeat;
+
+     background-repeat: no-repeat;
+
+}
+
+
+
+
+.brand5{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ffaf0200;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand15{
+    height: 85px;
+    width: 240px;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+
+.brand1in5{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+ background-image: url(../assets/Brahmins-final-logo.png);
+ 
+}
+
+
+
+
+
+@media only screen and (min-width:700px) {
+    
+.frontal5{
+    background-color: #e6ff0200;
+    background-image: none;
+}
+
+.image15{
+    margin-top: 5%;
+}
+
+.image15{
+    height: 400px;
+    width: 650px;
+
+}
+
+.text5 h1{
+margin-top: 5%;
+} 
+
+}

@@ -1,0 +1,36 @@
+.footer-home {
+  width: 100%;
+
+  color: #000000;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+border-radius: 10px;
+  margin: 0 auto;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.footer-section {
+  flex: 1 1 250px; /* wider base size for stability */
+  max-width: 100%;
+  min-width: 0; /* prevent overflow */
+  box-sizing: border-box;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000000;
+  text-decoration-style: none;
+}
+
