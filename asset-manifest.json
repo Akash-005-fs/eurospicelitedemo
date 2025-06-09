@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/eurospicelitedemo/static/css/main.0ab71489.css",
+    "main.css": "/eurospicelitedemo/static/css/main.b32f74c2.css",
     "main.js": "/eurospicelitedemo/static/js/main.92b734b6.js",
     "static/js/453.04b9fd3a.chunk.js": "/eurospicelitedemo/static/js/453.04b9fd3a.chunk.js",
     "static/media/vvvv2.mp4": "/eurospicelitedemo/static/media/vvvv2.592216cc912107ff9579.mp4",
     "static/media/eurospicev1.mp4": "/eurospicelitedemo/static/media/eurospicev1.5b8482c4315d785e1a2e.mp4",
+    "static/media/gfmain.png": "/eurospicelitedemo/static/media/gfmain.0d98214b1ef0b2532c13.png",
     "static/media/Flavournest_Pouches.png": "/eurospicelitedemo/static/media/Flavournest_Pouches.9946ae2092623b636d07.png",
     "static/media/mayilfoodsmain.png": "/eurospicelitedemo/static/media/mayilfoodsmain.524b1e9348c8d3cf58b8.png",
     "static/media/tatatea.png": "/eurospicelitedemo/static/media/tatatea.13eb9545a3546b910c6e.png",
@@ -46,12 +47,12 @@
     "static/media/g2.png": "/eurospicelitedemo/static/media/g2.831c15e1458a8f0bd959.png",
     "static/media/nestlelogo.png": "/eurospicelitedemo/static/media/nestlelogo.8d6f1d8705fade6c1bee.png",
     "index.html": "/eurospicelitedemo/index.html",
-    "main.0ab71489.css.map": "/eurospicelitedemo/static/css/main.0ab71489.css.map",
+    "main.b32f74c2.css.map": "/eurospicelitedemo/static/css/main.b32f74c2.css.map",
     "main.92b734b6.js.map": "/eurospicelitedemo/static/js/main.92b734b6.js.map",
     "453.04b9fd3a.chunk.js.map": "/eurospicelitedemo/static/js/453.04b9fd3a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ab71489.css",
+    "static/css/main.b32f74c2.css",
     "static/js/main.92b734b6.js"
   ]
 }
